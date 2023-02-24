@@ -87,7 +87,7 @@
   animation: rotazione_antioraria 1s linear 0s infinite normal forwards running;
 }
 
-@keyframes rotazione_antioraria{
+@keyframes rotazione_antioraria {
   0%{
     transform: rotate(360deg);
   }
@@ -125,5 +125,50 @@
   }
   100%{
     transform: rotate(0);
+  }
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+  animation: top_white_animation 2s linear 0s 1 normal forwards running;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: bottom_white_animation 2s linear 0s 1 normal forwards running;
+}
+
+@keyframes top_white_animation {
+  0%{
+    left: 10%;
+  }
+  25%{
+    left: 40%;
+  }
+  50%{
+    left: 69%;
+  }
+  75%{
+    left: 40%;
+  }
+  100%{
+    left: 10%;
+  }
+}
+
+@keyframes bottom_white_animation {
+  0%{
+    right: 20%;
+  }
+  25%{
+    right: 40%;
+  }
+  50%{
+    right: 69%;
+  }
+  75%{
+    right: 40%;
+  }
+  100%{
+    right: 20%;
   }
 }
