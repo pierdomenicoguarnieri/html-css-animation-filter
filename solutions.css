@@ -84,10 +84,10 @@
 
 /* Esercizio 10 */
 .ex-10-icon{
-  animation: rotazione 1s linear 0s infinite normal forwards running;
+  animation: rotazione_antioraria 1s linear 0s infinite normal forwards running;
 }
 
-@keyframes rotazione {
+@keyframes rotazione_antioraria{
   0%{
     transform: rotate(360deg);
   }
@@ -99,6 +99,29 @@
   }
   75%{
     transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+
+/* Esercizio 11 */
+.ex-11-icon:hover{
+  animation: rotazione_oraria 1s linear 0s 1 normal forwards running;
+}
+
+@keyframes rotazione_oraria{
+  0%{
+    transform: rotate(0);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(330deg);
   }
   100%{
     transform: rotate(0);
